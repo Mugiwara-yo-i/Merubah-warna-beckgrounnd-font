@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Perubah Warna</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 id="navbar">Ubah Warna</h1>
+        </div>
+    </div>
+    <div class="bg_color-txt_color">
+        <!-- Warna Background -->
+        <div class="back-color">
+
+            <h1>Ubah Begrond</h1>
+            <label>Di Sini</label>
+            <input type="color" id="bg-color">
+
+        </div>
+
+        <br>
+
+        <!-- Warna Font -->
+        <div class="text-color">
+
+            <h1>Ubah Warna Tulisan</h1>
+            <label>Di Sini</label>
+            <input type="color" id="txt-color">
+        </div>
+        <div class="foto">
+            <img src="./foto.icon copy.png">
+
+        </div>
+        <script>
+             
+             var bgColor = document.getElementById ("bg-color");
+             var txtColor = document.getElementById ("txt-color");
+            
+             bgColor.addEventListener("input",(event) => {
+                document.body.style.background = bgColor.value;
+             })
+
+             txtColor.addEventListener("input",(event) => {
+                document.body.style.color = txtColor.value;
+             })
+
+
+        </script>
+
+   
+    
+</body>
+</html>
